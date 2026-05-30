@@ -1,0 +1,8 @@
+stages:
+  - build
+
+frontend-build:
+  stage: build
+  script:
+    - npm install
+    - npm test
