@@ -5,3 +5,4 @@
 #retry again 
 #testing pipeline manager
 #testing pipeline manager1
+#testing AUTOMATIC YAML
