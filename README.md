@@ -9,3 +9,4 @@
 #finally testing worker
 #testing workspace cleanup
 #testing workspac cleanup2"
+#testing parallel exec
