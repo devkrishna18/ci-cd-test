@@ -12,3 +12,4 @@
 #testing parallel exec
 #testing individual repo workspace
 #testing metadata
+#testing pipelne discovery
