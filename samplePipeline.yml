@@ -1,8 +1,33 @@
-stages:
-  - build
-
 frontend-build:
+  image: node:20
   stage: build
   script:
-    - npm install
-    - npm test
+    - echo "Frontend Started"
+    - sleep 5
+    - echo "Frontend Finished"
+
+backend-build:
+  image: node:20
+  stage: build
+  script:
+    - echo "Backend Started"
+    - sleep 5
+    - echo "Backend Finished"
+
+lint:
+  image: node:20
+  stage: build
+  script:
+    - echo "Lint Started"
+    - sleep 5
+    - echo "Lint Finished"
+
+test:
+  image: node:20
+  stage: test
+  needs:
+    - frontend-build
+    - backend-build
+    - lint
+  script:
+    - echo "Running Tests"
